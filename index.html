@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<!-- ============================================================
-  天彬TianBIN框架设定 | 导航页
-  说明：
-  1. 视觉与脚本结构完全沿用示例 A，保证同一观感与交互。
-  2. 仅替换了：<title>、<meta> 描述、Header 文案、正文链接、Footer 版权行。
-  3. 如需修改背景图 / 字体等，只要调整 assets/* 或行内 <style> 块即可。
-============================================================ -->
 <script>
 function detectDevTools() {
     const t = 160;
@@ -57,20 +50,13 @@ document.addEventListener("copy", function(e) {
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
     <title>天彬TianBIN框架设定 | 导航页</title>
     <meta name="description" content="天彬TianBIN框架设定—导航页" />
     <meta name="keywords" content="天彬, tianbin, 天彬tianbin" />
     <meta name="robots" content="index,follow" />
-
-    <!-- 站点图标，可替换为自己 Logo -->
     <link rel="icon" href="https://www.tianbin.net/favicon.ico" type="image/png" />
-
-    <!-- 公用样式（示例 A 中的 main.css） -->
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- === 针对 Footer 的覆盖样式 === -->
-      <style>
+    <style>
         #footer {
             height: auto !important;
             line-height: 1.6em !important;
@@ -94,8 +80,6 @@ document.addEventListener("copy", function(e) {
     </style>
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-    <!-- 可选：Baidu·Analytics（保持原有脚本） -->
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -106,62 +90,35 @@ document.addEventListener("copy", function(e) {
         })();
     </script>
 
-    <!-- 处理 bfcache 返回的刷新 -->
     <script>
         window.onpageshow = function(event) {
             if (event.persisted) location.reload();
         };
     </script>
 </head>
-
 <body class="is-preload">
-    <!-- 兼容 Safari PWA 的隐藏 favicon 预先加载 -->
     <img width="0" src="https://www.tianbin.net/favicon.ico" alt="favicon" />
-
     <div id="wrapper">
         <div id="bg"></div>
         <div id="overlay"></div>
-
         <div id="main">
-            <!-- ========== Header ========== -->
             <header id="header">
-                <h1>天彬TianBIN <small style="font-size:.6em">（TianBIN·ICP）</small></h1>
+                <h1>天彬 <small style="font-size:.6em">（TianBIN）</small></h1>
                 <p>框架设定 导航页</p>
 
                 <p>
-                    <a href="https://web.bintian.net" target="_blank">探险之旅 →</a><br />
-                    <a href="mailto:op@tianbin.net?subject=角色设定投稿&body=姓名：%0D%0A性别：%0D%0A生日：%0D%0A年龄：%0D%0A身份：%0D%0A外貌：%0D%0A性格：%0D%0A爱好：%0D%0A优点：%0D%0A缺点：%0D%0A技能：%0D%0A重要经历：%0D%0A人际关系：%0D%0A修为(选填)：" target="_blank">立即申请 / 投稿设定 →</a>
+                    <a href="https://web.bintian.net" target="_blank">踏上探险之旅征程 →</a><br />
+                    <a href="mailto:op@tianbin.net?subject=角色设定投稿&body=姓名：%0D%0A性别：%0D%0A生日：%0D%0A年龄：%0D%0A身份：%0D%0A外貌：%0D%0A性格：%0D%0A爱好：%0D%0A优点：%0D%0A缺点：%0D%0A技能：%0D%0A重要经历：%0D%0A人际关系：%0D%0A修为(选填)：" target="_blank">投稿原创设定 →</a>
                 </p>
             </header>
-
-            <!-- ========== 主文案（可按需扩充为多段） ========== -->
-            <section id="content" style="max-width:900px;margin:2.5em auto;text-align:left;color:#eee;">
-                <h2>什么是彬ICP备案？</h2>
-                <p>
-                    彬ICP备案（简称「彬备」）是一个<strong>纯属《天彬》探险者自发</strong>的站长协会计划。<br> 只要你的网站热爱星辰文化、ACG·次元氛围，即可在页脚挂上专属
-                    <code>&lt;彬ICP备××号&gt;</code>，链接回查询系统，成为这个虚拟世界的一员。
-                </p>
-                <h3>加入步骤</h3>
-                <ol>
-                    <li>访问 <a href="https://icp.wentianplay.top" target="_blank">申请页面</a> 填写站点信息；</li>
-                    <li>获取分配到的「彬备案号」及示例代码；</li>
-                    <li>把代码粘贴到你网页的 <code>&lt;footer&gt;</code> 位置；</li>
-                    <li>提交审核，静候系统自动生效 —— 就这么简单！</li>
-                </ol>
-                <p class="disclaimer">
-                    提示：彬备仅代表兴趣《天彬》，<u>并非</u>政府机关的 ICP 正式备案，请勿与法律意义上的备案混淆。
-                </p>
-            </section>
-
-            <!-- ========== Footer ========== -->
             <footer id="footer">
                 <p>
                     <b>
             &copy; <script>document.write(new Date().getFullYear());</script>
-            <a href="https://icp.wentianplay.top" target="_blank">TianBIN·ICP 星辰协会</a><img width="20px" height="auto" src="https://icp.WenTianPlay.top/favicon.ico"><a href="https://icp.wentianplay.top" target="_blank">彬ICP备20250828号</a>     
+            <a href="https://icp.wentianplay.top" target="_blank">天彬TianBIN</a><img width="20px" height="auto" src="https://icp.WenTianPlay.top/favicon.ico"><a href="https://icp.wentianplay.top" target="_blank">彬ICP备20250828号</a>     
           </b><br/>
                     <span class="disclaimer">
-            天彬即正义· 请共同维护一个友善、合法、健康的网络环境。
+            天彬TianBIN· 请共同维护一个友善、合法、健康的网络环境。
           </span><br/>
                     <small>
       Powered by 
@@ -173,10 +130,7 @@ document.addEventListener("copy", function(e) {
                 </p>
             </footer>
         </div>
-        <!-- /#main -->
     </div>
-    <!-- /#wrapper -->
-    <!-- 保持示例 A 的脚本行为 -->
     <script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
     <script>
         window.onload = () => document.body.classList.remove("is-preload");
@@ -189,4 +143,4 @@ document.addEventListener("copy", function(e) {
         crossorigin="anonymous"></script>
 </body>
 </html>
-<meta http-equiv="refresh" content="33;url=https://icp.tianbin.net">
+<meta http-equiv="refresh" content="33;url=https://web.tianbin.org">
